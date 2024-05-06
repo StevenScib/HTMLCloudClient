@@ -45,11 +45,11 @@ textarea {
     margin: 0 5px; 
 }
 
-.btn.primary {
+.btn.main {
     background-color: #0eaf09;
 }
 
-.btn.primary:hover {
+.btn.main:hover {
     background-color: #24940e;
 }
 
