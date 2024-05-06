@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Management</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <!-- Your content goes here -->
-  <h1>Hello, World!</h1>
-  
 
+<!--This is the body of the site that contains the title, two text boxes to edit or add an article, a checkbox to set the published status and then it creates an unordered list of the article taken from the article-list-->
+<body>
+    <div class="container">
+        <h1>Article Management</h1>
+        <div class="form-container">
+            <form id="articleForm">
+                <input type="hidden" id="articleId" />
+                <div class="input-group">
+                    <input type="text" id="title" name="title" placeholder="Enter article title here..." required>
+                </div>
+                <div class="input-group">
+                    <textarea id="body" name="body" placeholder="Enter article body here..." required></textarea>
+                </div>
+                <div class="input-group checkbox-group">
+                    <label>
+                        <input type="checkbox" id="published" name="published"> Published
+                    </label>
+                </div>
+                <button type="submit" class="btn primary">Save Article</button>
+            </form>
+        </div>
+        <h2>Articles</h2>
+        <ul id="articlesList" class="articles-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
