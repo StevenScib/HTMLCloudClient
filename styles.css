@@ -30,7 +30,7 @@ h1, h2 {
     color: #0d0e0f;
 }
 
-.input-group {
+.input {
     margin-bottom: 20px;
 }
 
@@ -97,7 +97,7 @@ textarea {
     margin-top: 0;
 }
 
-.site-footer {
+.siteFooter {
     background-color: #f4f4f4;
     color: #333;
     text-align: center;
