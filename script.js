@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const title = document.createElement('h1');
                 title.textContent = article.title;
 
-                //template of pbody
+                //template of body
                 const body = document.createElement('p');
                 body.textContent = article.body;
 
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Funtion that determines whther the user is editing or creating a new article
+    // Function that determines whther the user is editing or creating a new article
     form.addEventListener('submit', function(event) {
         event.preventDefault();
         const articleId = document.getElementById('articleId').value;
